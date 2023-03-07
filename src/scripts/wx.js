@@ -34,6 +34,14 @@ addEventListener("load", async () => {
     let selectedRunways = [];
     if (winds[1].toString().includes("G")) {
         //High winds
+        i = 0;
+        let windDifference = [];
+        for (i in headingList) {
+            windDifference[i] = parseInt(headingList[i]) - winds[0];
+            windDifference[i] = Math.abs(windDifference[i]);
+        }
+        let bestRunway = headingList[windDifference.indexOf(Math.min(...windDifference))];
+        document.querySelector(`.r${bestRunway.toString()}`).innerHTML = document.querySelector(`.r${bestRunway.toString()}`).innerText + ` - Recommended Runway- ${runwayList[windDifference.indexOf(Math.min(...windDifference))]} | ${crosswinds(winds[0], winds[1], bestRunway)}`;
     } 
     else if (winds[1].toString().slice(0, 2) < 10 || winds[1].toString().slice(0, 2) == "VRB")  {
         let calmWind = document.querySelectorAll(".calmwind")
