@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <script src="/ids/scripts/wx.js"></script>
+        <title>KMSY Quick Reference | IDS</title>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="/ids">IDS Home</a>
+            <a href="/ids/keys">Key Reference</a>
+            <a href="/ids/zhu">ZHU</a>
+            <a href="/ids/zhu/msy" class="active">KMSY</a>
+            <a href="/">Main Website</a>
+        </div>
+        <main>
+            <div id="sop">
+                <p>Full Documents:</p>
+                <ul>
+                    <li><a class="idsLink" href="https://www.vzhuids.net/documents-and-controlling-files/sops/msy_atct_sop">MCO ATCT</a></li>
+                    <li><a class="idsLink" href="https://www.vzhuids.net/documents-and-controlling-files/sops/msy_tracon_sop">MSY TRACON</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div id="weather">
+                <p>METAR:</p>
+                <div id="metar"><p>Loading...</p></div>
+                <div id="runways">
+                    <p>Runways:</p>
+                    <ul id="runway-list">
+                        <li class="calmwind r110">11</li>
+                        <li class="r290">29</li>
+                        <li class="r020">02</li>
+                        <li class="r200">20</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div id="positions">
+                <p>Positions (Orange are Primary): </p>
+                <table class="idsTable">
+                    <tr class="tableHeader">
+                        <th>Callsign</th>
+                        <th>Frequency</th>
+                        <th>ID</th>
+                    </tr>
+                    <tr class="primaryPosition">
+                        <td>MSY_DEL</td>
+                        <td>120.925</td>
+                        <td>NML</td>
+                    </tr>
+                    <tr class="primaryPosition">
+                        <td>MSY_GND</td>
+                        <td>121.900</td>
+                        <td>NMR</td>
+                    </tr>
+                    <tr class="primaryPosition">
+                        <td>MSY_TWR</td>
+                        <td>119.500</td>
+                        <td>NMT</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div id="images">
+                <p>VFR Flyway</p>
+                <img src="https://lh5.googleusercontent.com/YugBvoNJJftSUaFN3ac8RkzXDj3TJVHaXNqykZWyDLcEqimXokyKulKcTzHq5O3cyGAkBvDR0x0OoftXI0ZGGNMHnK14JnQCzI0RbWWFg5FoqqoM=w1280" alt="VFR Flyway" class="idsImage">
+                <p class="idsCredit">Photo by vZHU ARTCC; <a href="https://www.vzhuids.net/documents-and-controlling-files/sops/msy_atct_sop">Source</a></p>
+            </div>
+        </main>
+    </body>
+    <footer>
+        <div class="footer">
+          <p>&copy; Samuel Valencia, 2022</p>
+        </div>
+    </footer>
+</html>
