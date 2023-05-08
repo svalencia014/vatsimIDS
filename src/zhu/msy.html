@@ -4,15 +4,15 @@
         <link rel="stylesheet" type="text/css" href="/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <script src="/ids/scripts/wx.js"></script>
+        <script src="/scripts/wx.js"></script>
         <title>KMSY Quick Reference | IDS</title>
     </head>
     <body>
         <div class="topnav">
-            <a href="/ids">IDS Home</a>
-            <a href="/ids/keys">Key Reference</a>
-            <a href="/ids/zhu">ZHU</a>
-            <a href="/ids/zhu/msy" class="active">KMSY</a>
+            <a href="/">IDS Home</a>
+            <a href="/keys">Key Reference</a>
+            <a href="/zhu">ZHU</a>
+            <a href="/zhu/msy" class="active">KMSY</a>
             <a href="/">Main Website</a>
         </div>
         <main>
@@ -27,14 +27,9 @@
             <div id="weather">
                 <p>METAR:</p>
                 <div id="metar"><p>Loading...</p></div>
-                <div id="runways">
-                    <p>Runways:</p>
-                    <ul id="runway-list">
-                        <li class="calmwind r110">11</li>
-                        <li class="r290">29</li>
-                        <li class="r020">02</li>
-                        <li class="r200">20</li>
-                    </ul>
+                <div class="runways">
+                    <p>ATIS:</p>
+                    <iframe src="https://datis.clowd.io/kmsy" width="500rem" height="400rem" frameborder="0"></iframe>
                 </div>
             </div>
             <hr>
@@ -66,8 +61,8 @@
             <hr>
             <div id="images">
                 <p>VFR Flyway</p>
-                <img src="https://lh5.googleusercontent.com/YugBvoNJJftSUaFN3ac8RkzXDj3TJVHaXNqykZWyDLcEqimXokyKulKcTzHq5O3cyGAkBvDR0x0OoftXI0ZGGNMHnK14JnQCzI0RbWWFg5FoqqoM=w1280" alt="VFR Flyway" class="idsImage">
-                <p class="idsCredit">Photo by vZHU ARTCC; <a href="https://www.vzhuids.net/documents-and-controlling-files/sops/msy_atct_sop">Source</a></p>
+                <img src="/img/zhu/msy-flyway.png" alt="VFR Flyway" class="idsImage">
+                <p class="idsCredit">Photo by vZHU ARTCC; <a href="https://www.vzhuids.net/documents-and-controlling-files/sops/msy_atct_sop#h.jnjt6x8gyelt">Source</a></p>
             </div>
         </main>
     </body>
