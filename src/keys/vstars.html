@@ -1,114 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <title>vSTARS Reference | IDS
-    </title>
-</head>
-<body>
+  <head>
+      <link rel="stylesheet" type="text/css" href="/style.css">
+      <title>vSTARS Reference | IDS
+      </title>
+  </head>
+  <body>
     <div class="topnav">
-        <a href="/ids">IDS Home</a>
-        <a href="/ids/keys" class="active">Key Reference</a>
-        <a href="/">Main Website</a>
+      <a href="/">IDS Home</a>
+      <a href="/keys" class="active">Key Reference</a>
+      <a href="/">Main Website</a>
     </div>
     <main>
-        <h1>vSTARS</h1>
-        <div id="docs">
-            <p>Documentation</p>
-            <ul>
-                <li><a href="https://vstars.rosscarlson.dev/Assets/Files/vSTARS%20Command%20Reference.pdf">Command List</a></li>
-                <li><a href="https://vstars.rosscarlson.dev/Assets/Files/vSTARS%20Controller's%20Guide.pdf">User Manual</a></li>
-            </ul>
-        </div>
-        <hr>
-        <div id="quickref">
-          <p>Create Flight Plan</p>
-          <ul>
-                <li>
-                    <p>IFR: <code>CALLSIGN + SQWK +SCRATCHPAD ACTYPE CRUISEALT DEP*ARR</code> </p>
-					<p class="small">Ex: <code>DAL4205 + 2000 +ARN A20N 310 JAX*ATL</code> </p>
-                </li>
-                <li>
-                    <p>VFR: <code>CALLSIGN / 1200 +SCRATCHPAD ACTYPE CRUISEALT DEP*ARR</code></p>
-					<p class="small">Ex: <code>N700MS / 1200 +PTN C172 015 JAX*JAX</code></p>
-                </li>
-            </ul>
-					<p>Set Altitude Filters</p>
-					<ul>
-						<li>
-							<p>All Targets: <code>&lt;F7&gt; + F LOWALTHIGHALT LOWALTHIGHALT</code></p>
-							<p class="small">Ex: <code>&lt;F7&gt; + F 000160 000160</code></p>
-						</li>
-						<li>
-							<p>Associated Only: <code>&lt;F7&gt; + FC LOWALTHIGHALT</code> </p>
-							<p class="small">Ex: <code>&lt;F7&gt; + FC 000160</code></p>
-						</li>
-					</ul>
-					<p>GI Text</p>
-					<ul>
-						<li>
-							<p>Set Atis Code: <code>&lt;F7&gt; + S${A-Z} optionalText</code></p>
-							<p class="small">Ex: <code>&lt;F7&gt; + SJ 08/14</code></p>
-							<p class="small">Ex: <code>&lt;F7&gt; + SD 7L/R</code></p>
-						</li>
-						<li>
-							<p>Update Atis Code: <code>&lt;F7&gt; S${A-Z}</code></p>
-							<p class="small">Ex:<code>&lt;F7&gt; + SM</code></p>
-						</li>
-					</ul>
-        </div>
-        <hr>
-        <div id="lists">
-            <p>List Management</p>
-            <table class="idsTable">
-                <tr class="tableHeader">
-                    <th>List</th>
-                    <th>Keys</th>
-                </tr>
-                <tr class="tableRow">
-                    <td>SSA</td>
-                    <td>&lt;F7&gt; + S</td>
-                </tr>
-                <tr class="tableRow">
-                    <td>TAB List</td>
-                    <td>&lt;F7&gt; + T</td>
-                </tr>
-                <tr class="tableRow">
-                    <td>VFR List</td>
-                    <td>&lt;F7&gt; + TV</td>
-                </tr>
-                <tr class="tableRow">
-                    <td>TOWER List</td>
-                    <td>&lt;F7&gt; + P</td>
-                </tr>
-                <tr class="tableRow">
-                    <td>Sign-On</td>
-                    <td>&lt;F7&gt; + TS</td>
-                </tr>
-                <tr class="tableRow">
-                    <td>CDRA</td>
-                    <td>&lt;F7&gt; + TN</td>
-                </tr>
-                <tr class="tableRow">
-                    <td>Video Maps</td>
-                    <td>&lt;F7&gt; + TX</td>
-                </tr>
-                <tr class="tableRow">
-                    <td>LA/CA/MCI</td>
-                    <td>&lt;F7&gt; + TM</td>
-                </tr>
-                <tr class="tableRow">
-                    <td>Coast</td>
-                    <td>&lt;F7&gt; + TC</td>
-                </tr>
-            </table>
-        </div>
+      <h1>vSTARS</h1>
+      <div id="docs">
+        <p>Documentation</p>
+        <ul>
+          <li><a href="https://vstars.rosscarlson.dev/Assets/Files/vSTARS%20Command%20Reference.pdf">Command List</a></li>
+          <li><a href="https://vstars.rosscarlson.dev/Assets/Files/vSTARS%20Controller's%20Guide.pdf">User Manual</a></li>
+        </ul>
+      </div>
+      <hr>
+      <div id="quickref">
+        <p>Create Flight Plan</p>
+        <ul>
+          <li>
+            <p>IFR: <code>CALLSIGN + SQWK +SCRATCHPAD ACTYPE CRUISEALT DEP*ARR</code> </p>
+            <p class="small">Ex: <code>DAL4205 + 2000 +ARN A20N 310 JAX*ATL</code> </p>
+          </li>
+          <li>
+            <p>VFR: <code>CALLSIGN / 1200 +SCRATCHPAD ACTYPE CRUISEALT DEP*ARR</code></p>
+            <p class="small">Ex: <code>N700MS / 1200 +PTN C172 015 JAX*JAX</code></p>
+          </li>
+        </ul>
+        <p>Set Altitude Filters</p>
+        <ul>
+          <li>
+            <p>All Targets: <code>&lt;F7&gt; + F LOWALTHIGHALT LOWALTHIGHALT</code></p>
+            <p class="small">Ex: <code>&lt;F7&gt; + F 000160 000160</code></p>
+          </li>
+          <li>
+            <p>Associated Only: <code>&lt;F7&gt; + FC LOWALTHIGHALT</code> </p>
+            <p class="small">Ex: <code>&lt;F7&gt; + FC 000160</code></p>
+          </li>
+        </ul>
+        <p>GI Text</p>
+        <ul>
+          <li>
+            <p>Set Atis Code: <code>&lt;F7&gt; + S${A-Z} optionalText</code></p>
+            <p class="small">Ex: <code>&lt;F7&gt; + SJ 08/14</code></p>
+            <p class="small">Ex: <code>&lt;F7&gt; + SD 7L/R</code></p>
+          </li>
+          <li>
+            <p>Update Atis Code: <code>&lt;F7&gt; S${A-Z}</code></p>
+            <p class="small">Ex:<code>&lt;F7&gt; + SM</code></p>
+          </li>
+        </ul>
+      </div>
+      <hr>
+      <div id="lists">
+        <p>List Management</p>
+        <table class="idsTable">
+          <tr class="tableHeader">
+            <th>List</th>
+            <th>Keys</th>
+          </tr>
+          <tr class="tableRow">
+            <td>SSA</td>
+            <td>&lt;F7&gt; + S</td>
+          </tr>
+          <tr class="tableRow">
+            <td>TAB List</td>
+            <td>&lt;F7&gt; + T</td>
+          </tr>
+          <tr class="tableRow">
+            <td>VFR List</td>
+            <td>&lt;F7&gt; + TV</td>
+          </tr>
+          <tr class="tableRow">
+            <td>TOWER List</td>
+            <td>&lt;F7&gt; + P</td>
+          </tr>
+          <tr class="tableRow">
+            <td>Sign-On</td>
+            <td>&lt;F7&gt; + TS</td>
+          </tr>
+          <tr class="tableRow">
+            <td>CDRA</td>
+            <td>&lt;F7&gt; + TN</td>
+          </tr>
+          <tr class="tableRow">
+            <td>Video Maps</td>
+            <td>&lt;F7&gt; + TX</td>
+          </tr>
+          <tr class="tableRow">
+            <td>LA/CA/MCI</td>
+            <td>&lt;F7&gt; + TM</td>
+          </tr>
+          <tr class="tableRow">
+            <td>Coast</td>
+            <td>&lt;F7&gt; + TC</td>
+          </tr>
+        </table>
+      </div>
     </main>
     <hr>
-    <footer>
-        <div class="footer">
-          <p>&copy; Samuel Valencia, 2022</p>
-        </div>
-      </footer>
-</body>
+  </body>
+  <footer>
+    <div class="footer">
+      <p>&copy; Samuel Valencia, 2022</p>
+    </div>
+  </footer>
 </html>
