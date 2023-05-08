@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <script src="/ids/scripts/wx.js"></script>
+    <script src="/scripts/wx.js"></script>
     <title>KHOU Quick Reference | IDS</title>
   </head>
   <body>
@@ -28,16 +28,8 @@
           <p>METAR:</p>
           <div id="metar"><p>Loading...</p></div>
           <div id="runways">
-            <p>Runways:</p>
-            <ul id="runway-list">
-              <li class="calmwind r040">4</li>
-              <li class="r130">13R</li>
-              <li class="r130">13L</li>
-              <li class="r220">22</li>
-              <li class="r310">31L</li>
-              <li class="r310">31R</li>
-            </ul>
-          </div>
+            <p>ATIS:</p>
+            <iframe src="https://datis.clowd.io/khou" width="500rem" height="400rem" frameborder="0"></iframe>
         </div>
         <hr>
         <div id="positions">
@@ -51,17 +43,17 @@
             <tr class="primaryPosition">
               <td>HOU_DEL</td>
               <td>125.45</td>
-              <td>AHL</td>
+              <td>HL</td>
             </tr>
             <tr class="primaryPosition">
               <td>HOU_GND</td>
               <td>121.900</td>
-              <td>AHR</td>
+              <td>HR</td>
             </tr>
             <tr class="primaryPosition">
               <td>HOU_TWR</td>
               <td>118.700</td>
-              <td>AHT</td>
+              <td>HT</td>
             </tr>
           </table> 
         </div>
@@ -97,8 +89,9 @@
         </table>
       </div>
       <hr>
-      <div id="dtas">
-        
+      <div id="images">
+        <p>DTAs</p>
+        <img src="/img/zhu/hou-sids.png" alt="Hobby SIDs" width="1000rem">
       </div>
     </main>
   </body>
