@@ -53,4 +53,54 @@
     </table>
   </div>
   <hr>
+  <div id="departureAlt" class="ptb-25">
+    <p class="text-center text-3xl pb-25">Departure Altitudes</p>
+    <table class="idsTable">
+      <tr class="tableHeader">
+        <th>Type</th>
+        <th>VFR</th>
+        <th>IFR</th>
+        <th>Local IFR</th>
+      </tr>
+      <tr class="tableRow">
+        <td>Jet/Prop</td>
+        <td>4000</td>
+        <td>4000</td>
+        <td>3000</td>
+      </tr>
+      <tr class="tableRow">
+        <td>Piston/Heli</td>
+        <td>3500</td>
+        <td>3000</td>
+        <td>2000</td>
+      </tr>
+    </table>
+  </div>
+  <hr>
+  <div id="headings" class="ptb-25">
+    <p class="text-center text-3xl">Headings</p>
+    <p class="text-center text-lg pb-25"><i>For pistons only</i></p>
+    <table class="idsTable">
+      <tr class="tableHeader">
+        <th>Runway</th>
+        <th>Heading</th>
+      </tr>
+      <tr class="tableRow">
+        <td>7L</td>
+        <td>070</td>
+      </tr>
+      <tr class="tableRow">
+        <td>7R</td>
+        <td>070</td>
+      </tr>
+      <tr class="tableRow">
+        <td>25L</td>
+        <td>250</td>
+      </tr>
+      <tr class="tableRow">
+        <td>25R</td>
+        <td>250</td>
+      </tr>
+    </table>
+  </div>
 </main>
