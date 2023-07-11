@@ -26,7 +26,9 @@
       document.getElementById(path).classList.remove("active");
       document.getElementById(path).className = "active";
     } else {
-      document.querySelector('.active').classList.remove("active");
+      if (document.querySelector('.active') != null) {
+        document.querySelector('.active').classList.remove("active");
+      }
     }
   })
 </script>

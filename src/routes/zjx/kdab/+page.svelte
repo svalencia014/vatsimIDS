@@ -1,7 +1,7 @@
 <script>
-	import { onMount } from 'svelte';
   import '../../../app.css';
   import Navbar from "../../../components/Navbar.svelte";
+  import Footer from '../../../components/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -13,7 +13,7 @@
 <main>
   <div id="pageHeader" class="ptb-25">
     <p class="text-center text-3xl">Daytona Beach</p>
-    <a href="https://www.idszjxartcc.org/index.php?title=DAB_SOP">KDAB - ZJX SOP</a>
+    <a href="https://www.idszjxartcc.org/index.php?title=DAB_SOP" class="text-center db">KDAB - ZJX SOP</a>
   </div>
   <hr>
   <div id="positions" class="ptb-25">
@@ -104,3 +104,8 @@
     </table>
   </div>
 </main>
+<footer>
+  <div class="footer text-center">
+    <Footer user="svalencia014" name="Samuel V."/>
+  </div>
+</footer>

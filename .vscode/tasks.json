@@ -14,7 +14,7 @@
 			"script": "dev -- --open --host",
 			"group": {
 				"kind": "build",
-				"isDefault": true
+				"isDefault": false
 			}
 		}
 	]
